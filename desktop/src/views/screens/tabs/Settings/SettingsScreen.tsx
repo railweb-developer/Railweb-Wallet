@@ -390,7 +390,7 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
           />
           <ListItem
             title="Change password (DISABLED)"
-            description="Set a new password for Railway"
+            description="Set a new password for Rail Web"
             className={styles.listItemDisabled}
             titleClassName={styles.itemTitle}
             descriptionClassName={styles.itemDescription}
@@ -408,7 +408,7 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
           >
             <ListItem
               title="User Guide"
-              description="How to use Railway Wallet"
+              description="How to use Rail Web Wallet"
               className={styles.listItem}
               titleClassName={styles.itemTitle}
               descriptionClassName={styles.itemDescription}
@@ -427,7 +427,7 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
           >
             <ListItem
               title="Community"
-              description="@railwaywallet on Telegram"
+              description="@TODO_CHANGE on Telegram"
               className={styles.listItem}
               titleClassName={styles.itemTitle}
               descriptionClassName={styles.itemDescription}
@@ -500,25 +500,6 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
         <div>
           <Text className={styles.sectionHeader}>App</Text>
           <a
-            href={Constants.DESKTOP_DOWNLOADS_URL}
-            target="_blank"
-            rel="noreferrer"
-            className={styles.titleLink}
-          >
-            <ListItem
-              title="Desktop Downloads"
-              description="Get Railway for Mac, Windows, Linux"
-              className={styles.listItem}
-              titleClassName={styles.itemTitle}
-              descriptionClassName={styles.itemDescription}
-              right={() => (
-                <div className={styles.rightContainer}>
-                  {renderIcon(IconType.Desktop, 18)}
-                </div>
-              )}
-            />
-          </a>
-          <a
             href={Constants.PRIVACY_POLICY_URL}
             target="_blank"
             rel="noreferrer"
@@ -526,7 +507,7 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
           >
             <ListItem
               title="Privacy Policy"
-              description="View Railway privacy policy"
+              description="View Rail Web privacy policy"
               className={styles.listItem}
               titleClassName={styles.itemTitle}
               descriptionClassName={styles.itemDescription}
@@ -545,7 +526,7 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
           >
             <ListItem
               title="Terms of Use"
-              description="View Railway terms of use"
+              description="View Rail Web terms of use"
               className={styles.listItem}
               titleClassName={styles.itemTitle}
               descriptionClassName={styles.itemDescription}
@@ -618,7 +599,7 @@ export const SettingsScreen: React.FC<Props> = ({ onClose }) => {
       </div>
       <footer className={styles.footer}>
         <Text className={styles.footerText}>
-          Railway • Version {appVersionNumber}
+          Rail Web • Version {appVersionNumber}
         </Text>
       </footer>
       {defaultsModalOpen && (

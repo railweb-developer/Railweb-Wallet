@@ -88,7 +88,7 @@ export const CancelTransactionConfirm = ({
   if (toWalletAddress !== activeWallet.ethAddress) {
     return (
       <Text style={{ margin: 24 }}>Must cancel with public wallet active: {toWalletAddress}. This is
-                currently not possible in Railway wallet.
+                currently not possible in Rail Web wallet.
               </Text>
     );
   }

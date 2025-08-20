@@ -274,11 +274,11 @@ export const DesktopOnlyScreen: React.FC<DesktopOnlyScreenProps> = ({
           {!loading && (
             <>
               <Text className={styles.errorText}>
-                Railway Wallet strives for top tier security and data protection
-                for users. All Railway Wallet applications have undergone
+                Rail Web Wallet strives for top tier security and data protection
+                for users. All Rail Web Wallet applications have undergone
                 extensive auditing by Trail of Bits and Zokyo and the source
                 code is now available at{' '}
-                <a href="https://railway.xyz" target="_blank" rel="noreferrer">
+                <a href="https://TODO_CHANGE.xyz" target="_blank" rel="noreferrer">
                   railway.xyz
                 </a>
                 . No vulnerabilities have been found.
@@ -287,7 +287,7 @@ export const DesktopOnlyScreen: React.FC<DesktopOnlyScreenProps> = ({
                 However, because native applications are inherently more secure,
                 software updates will now focus on the desktop and mobile device
                 applications. Please download one of these apps to continue
-                using Railway Wallet.
+                using Rail Web Wallet.
                 {hasWallets
                   ? ' You can view your existing wallets to import to the device of your choice.'
                   : ''}

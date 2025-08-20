@@ -50,7 +50,7 @@ export const startEngine = async (
   }
 
   await startRailgunEngine(
-    isElectron() ? 'railway desktop' : 'railway web',
+    'rail web', // TODO_CHANGE check if this is ok
     DB_PATH,
     ReactConfig.IS_DEV,
     undefined, poiNodeUrls,

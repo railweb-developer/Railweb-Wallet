@@ -96,7 +96,7 @@ export const ExportTransactions = () => {
       throw new Error('No transactions found for tax export.');
     }
 
-    const filename = `railway-koinly-${getUTCString()}-${
+    const filename = `railweb-koinly-${getUTCString()}-${
       network.current.shortPublicName
     }-${activeWallet.name}`;
 
@@ -120,7 +120,7 @@ export const ExportTransactions = () => {
           )
         : items;
 
-    const filename = `railway-readable-${getUTCString()}-${
+    const filename = `railweb-readable-${getUTCString()}-${
       network.current.shortPublicName
     }-${activeWallet.name}`;
     downloadCSV(humanReadableFields, filteredItems, filename);

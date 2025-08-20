@@ -41,7 +41,7 @@ export const SwapScreen: React.FC<Props> = ({ isRailgun, setIsRailgun }) => {
         <div className={styles.content}>
           <div className={styles.headerRow}>
             <Text className={styles.headerText}>
-              RAILWAY <span className={styles.headerUnBoldText}>DEX</span>
+              RAIL WEB <span className={styles.headerUnBoldText}>DEX</span>
             </Text>
             <Text className={styles.headerSubtext}>
               Private and public swaps on {network.current.shortPublicName}

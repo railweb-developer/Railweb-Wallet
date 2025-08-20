@@ -36,7 +36,7 @@ export const AddCustomPOIListModal = ({ onClose }: Props) => {
             onClick={async () => {
               setAlert({
                 title: 'Added new custom list',
-                message: 'Railway will now restart to apply this setting.',
+                message: 'Rail Web will now restart to apply this setting.',
                 submitTitle: 'Ok',
                 onClose: () => setAlert(undefined),
                 onSubmit: async () => {

@@ -84,7 +84,7 @@ export class WalletService {
       const pKey = await mnemonicTo0xPKey(mnemonic, derivationIndex);
       const wallet = new Wallet(pKey);
       if (await isBlockedAddress(wallet.address)) {
-        throw new Error('This wallet cannot be used with Railway Wallet.');
+        throw new Error('This wallet cannot be used with Rail Web Wallet.');
       }
     }
 

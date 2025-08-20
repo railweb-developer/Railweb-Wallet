@@ -32,7 +32,7 @@ export enum Tab {
   NFTs = 'NFTs',
   DApps = 'dApps',
 
-  RailwayDEX = 'Railway DEX',
+  RailwayDEX = 'Rail Web DEX',
   Liquidity = 'Liquidity',
   Farm = 'Farm',
 }

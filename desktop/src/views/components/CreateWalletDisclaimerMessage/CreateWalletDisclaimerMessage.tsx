@@ -24,7 +24,7 @@ export const CreateWalletDisclaimerMessage = ({
       </Text>
       {!hideTerms && (
         <Text className={disclaimerTextStyle}>
-          By continuing, you verify you have read & agree to the Railway Wallet{' '}
+          By continuing, you verify you have read & agree to the Rail Web Wallet{' '}
           <a
             href={Constants.TERMS_URL}
             target="_blank"

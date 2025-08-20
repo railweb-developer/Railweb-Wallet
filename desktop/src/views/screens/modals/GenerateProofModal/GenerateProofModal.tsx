@@ -111,7 +111,7 @@ export const GenerateProofModal: React.FC<GenerateProofModalProps> = ({
           publicWalletOverride ? 'the selected wallet' : 'the selected broadcaster'
         }.`}
         failure={failure}
-        processingWarning="Please keep Railway open. This may take 5-10 seconds per token."
+        processingWarning="Please keep Rail Web open. This may take 5-10 seconds per token."
         progress={proofProgress.progress}
         onPressSuccessView={onSuccessClose}
         onPressFailView={onFailClose}

@@ -19,8 +19,8 @@ import { copyToClipboard } from './clipboard';
 import styles from './utils.module.scss';
 
 export enum ExternalSiteAlertMessages {
-  OPEN_EXTERNAL_SITE = 'You are opening an external site, which may not have the same privacy guarantees of Railway Wallet. Viewing this risks correlating your IP address.',
-  OPEN_EXTERNAL_TRANSACTION = 'You are opening this transaction on an external site, which may not have the same privacy guarantees of Railway Wallet. Viewing this transaction on an external site risks correlating your IP address.',
+  OPEN_EXTERNAL_SITE = 'You are opening an external site, which may not have the same privacy guarantees of Rail Web Wallet. Viewing this risks correlating your IP address.',
+  OPEN_EXTERNAL_TRANSACTION = 'You are opening this transaction on an external site, which may not have the same privacy guarantees of Rail Web Wallet. Viewing this transaction on an external site risks correlating your IP address.',
 }
 
 export const createExternalSiteAlert = (
@@ -74,7 +74,7 @@ export const createUpdateCurrencyAlert = (
 ) => {
   setAlert({
     title: 'Settings updated',
-    message: 'Railway will now restart to apply this setting.',
+    message: 'Rail Web will now restart to apply this setting.',
     submitTitle: 'Ok',
     onClose: () => setAlert(undefined),
     onSubmit: async () => {
@@ -114,7 +114,7 @@ export const createPOIDisclaimerAlert = (
           onClick={handleRedirect(poiDocumentation.railgunPOIDocUrl)}
         />
         <Button
-          children="Private POI in Railway Wallet"
+          children="Private POI in Rail Web Wallet"
           buttonClassName={cn(styles.fullLengthButtonStyle, styles.docButton)}
           onClick={handleRedirect(poiDocumentation.railwayPOIDocUrl)}
         />
@@ -177,7 +177,7 @@ export const createPublicBroadcasterDisclaimerAlert = (
   setAlert({
     title: 'Public Broadcaster',
     message:
-      'Use a third-party public broadcaster to sign a private transaction and broadcast to the blockchain nodes. This provides more anonymity. Public broadcasters do not ever gain control or custody of your funds and cannot see any details of the sender or the contents of the private transaction. Railway does not control or maintain any broadcasters in the decentralized public broadcaster network.',
+      'Use a third-party public broadcaster to sign a private transaction and broadcast to the blockchain nodes. This provides more anonymity. Public broadcasters do not ever gain control or custody of your funds and cannot see any details of the sender or the contents of the private transaction. Rail Web does not control or maintain any broadcasters in the decentralized public broadcaster network.',
     submitTitle: 'Okay',
     submitButtonClassName: styles.singleLineButtonStyle,
     footerView: (

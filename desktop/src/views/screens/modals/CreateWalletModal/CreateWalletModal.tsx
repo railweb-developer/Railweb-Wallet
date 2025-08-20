@@ -81,7 +81,7 @@ export const CreateWalletModal = ({
         maxLength={SharedConstants.MAX_LENGTH_WALLET_NAME}
         hasError={hasInputError}
       />
-      <CreateWalletDisclaimerMessage customTitle="Railway will generate a new wallet address with a random seed phrase." />
+      <CreateWalletDisclaimerMessage customTitle="Rail Web will generate a new wallet address with a random seed phrase." />
       {showProcessModal && (
         <ProcessNewWalletModal
           walletName={walletName.trim()}

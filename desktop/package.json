@@ -1,8 +1,8 @@
 {
-  "name": "railway-reactjs",
-  "version": "5.22.4",
+  "name": "railweb",
+  "version": "1.0.0",
   "private": true,
-  "author": "Right to Privacy Foundation <mail@righttoprivacy.foundation>",
+  "author": "railweb-developer",
   "license": "AGPL-3.0-only",
   "scripts": {
     "start": "yarn run react-shared && npm run reset-cache && REACT_APP_VERSION=$npm_package_version craco start",
@@ -156,85 +156,6 @@
   },
   "main": "electron/main.js",
   "homepage": "./",
-  "build": {
-    "appId": "com.railway.rtp",
-    "productName": "Railway",
-    "extends": null,
-    "artifactName": "Railway ${os} ${arch}.${ext}",
-    "afterSign": "./afterSignHook.js",
-    "mac": {
-      "target": "dmg",
-      "category": "public.app-category.finance",
-      "entitlements": "./entitlements.plist",
-      "entitlementsInherit": "./entitlements.plist",
-      "hardenedRuntime": true,
-      "gatekeeperAssess": false,
-      "type": "distribution",
-      "publish": {
-        "provider": "github",
-        "repo": "Railway-Wallet",
-        "owner": "Railway-Wallet",
-        "vPrefixedTagName": "true",
-        "protocol": "https",
-        "private": false,
-        "channel": "latest",
-        "releaseType": "release",
-        "publishAutoUpdate": "false"
-      }
-    },
-    "win": {
-      "target": [
-        "nsis",
-        "portable",
-        "zip"
-      ],
-      "publish": {
-        "provider": "github",
-        "repo": "Railway-Wallet",
-        "owner": "Railway-Wallet",
-        "vPrefixedTagName": "true",
-        "protocol": "https",
-        "private": false,
-        "channel": "latest",
-        "releaseType": "release",
-        "publishAutoUpdate": "false"
-      }
-    },
-    "linux": {
-      "icon": "public/linux-app-icon",
-      "target": [
-        "AppImage",
-        "snap",
-        "deb",
-        "rpm",
-        "pacman"
-      ],
-      "publish": {
-        "provider": "github",
-        "repo": "Railway-Wallet",
-        "owner": "Railway-Wallet",
-        "vPrefixedTagName": "true",
-        "protocol": "https",
-        "private": false,
-        "channel": "latest",
-        "releaseType": "release",
-        "publishAutoUpdate": "false"
-      }
-    },
-    "nsis": {
-      "artifactName": "${productName} Setup.${ext}",
-      "differentialPackage": false
-    },
-    "dmg": {
-      "writeUpdateInfo": false
-    },
-    "files": [
-      "build/**/*",
-      "electron/main.js",
-      "electron/preload.js",
-      "package.json"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",

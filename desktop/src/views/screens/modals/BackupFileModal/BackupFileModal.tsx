@@ -24,8 +24,8 @@ interface BackupFileProps {
 }
 
 enum BackupErrors {
-  INVALID_FILE = 'The file you selected is not a .railway file.',
-  MULTIPLE_FILES = 'Please select one .railway file at a time.',
+  INVALID_FILE = 'The file you selected is not a .railweb file.',
+  MULTIPLE_FILES = 'Please select one .railweb file at a time.',
   DECRYPTION_FAILED = 'There was an error decrypting the file. Please enter the correct wallet encryption code.',
 }
 
@@ -91,7 +91,7 @@ export const BackupFileModal = ({
     maxFiles: 1,
     multiple: false,
     accept: {
-      'text/railway': ['.railway'],
+      'text/railweb': ['.railweb'],
     },
   });
 
@@ -133,14 +133,14 @@ export const BackupFileModal = ({
       <div {...getRootProps()} className={styles.dropContainer}>
         <input {...getInputProps()} />
         {isDragActive ? (
-          <p>Drop the Railway file here ...</p>
+          <p>Drop the Rail Web file here ...</p>
         ) : error ? (
           <p className={styles.errorText}>{error.message}</p>
         ) : (
           <div>
             {renderIcon(IconType.Download, 24)}
             <p className={styles.instructionsText}>
-              Drag and drop your Railway file here, or click to select it.
+              Drag and drop your Rail Web file here, or click to select it.
             </p>
           </div>
         )}

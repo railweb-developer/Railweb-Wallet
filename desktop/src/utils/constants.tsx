@@ -14,10 +14,7 @@ export class Constants {
   static readonly SHOW_VERBOSE_BROADCASTER_ERRORS_IN_PROD = true;
   static readonly SHOW_FARM_FEATURE = true;
 
-  static readonly RAILWAY_IOS_APP_STORE_URL =
-    'https://apps.apple.com/us/app/railway-private-defi-wallet/id6444296719';
-  static readonly RAILWAY_ANDROID_GOOGLE_PLAY_URL =
-    'https://play.google.com/store/apps/details?id=com.railway.rtp';
+
   static readonly ELECTRON_DOWNLOAD_URL =
     'https://github.com/Railway-Wallet/Railway-Wallet/releases';
 

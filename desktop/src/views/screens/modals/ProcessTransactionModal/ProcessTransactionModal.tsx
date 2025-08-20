@@ -120,7 +120,7 @@ export const ProcessTransactionModal: React.FC<
         successText={successText}
         failure={failure}
         processingWarning={
-          showKeepAppOpenText ? 'Please keep Railway open' : ''
+          showKeepAppOpenText ? 'Please keep Rail Web open' : ''
         }
         onPressSuccessView={onSuccessClose}
         onPressFailView={onFailClose}

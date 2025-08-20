@@ -28,23 +28,23 @@ export const getShieldingPOIDisclaimerMessage = (network: Network) => {
   return `
 "Shielding" means adding tokens to your hidden 0zk address, where you retain full non-custodial control.
 
-Clicking "Shield" also initiates a Private Proof of Innocence (Private POI). Private POIs help to prevent bad actors from using Railway, keeping the tool hygienic and your tokens safe.
+Clicking "Shield" also initiates a Private Proof of Innocence (Private POI). Private POIs help to prevent bad actors from using Rail Web, keeping the tool hygienic and your tokens safe.
 
 This is the process:
 
 1. ${validationTimeText} before your shielded funds can be used for purposes other than returning to your public address, known as the Unshield-only Standby Period. During this standby period, like any other time with your 0zk address, no person other than yourself can see or control your tokens. If something urgent comes up, you will still be able to unshield them to origin without waiting.
 
-2. The Private POI system creates a zero-knowledge proof (a small piece of data) confirming that your shield is not associated with a list of dangerous addresses. Initially, there is only the free and public OFAC designated list updated by Chainalysis at https://public.chainalysis.com/api/v1/. (To be clear, no data is shared with Chainalysis — they are only giving away a free list.) In the future, knowledgeable community organizations will likely publish and update additional lists to help wallet users avoid bad actors, giving Railway Wallet users the choice of which lists to use. Railway Wallet itself does not create or update these lists. Shields that are associated with any designated lists cannot successfully create a Private POI and will not be able to use Railway Wallet, only having the option to unshield to origin - those tokens will be otherwise unspendable.
+2. The Private POI system creates a zero-knowledge proof (a small piece of data) confirming that your shield is not associated with a list of dangerous addresses. Initially, there is only the free and public OFAC designated list updated by Chainalysis at https://public.chainalysis.com/api/v1/. (To be clear, no data is shared with Chainalysis — they are only giving away a free list.) In the future, knowledgeable community organizations will likely publish and update additional lists to help wallet users avoid bad actors, giving Rail Web Wallet users the choice of which lists to use. Rail Web Wallet itself does not create or update these lists. Shields that are associated with any designated lists cannot successfully create a Private POI and will not be able to use Rail Web Wallet, only having the option to unshield to origin - those tokens will be otherwise unspendable.
 
-3. The Private POI system and Railway Wallet app do not share any transaction history with anyone, including app publishers or contributors. Transactions from 0zk wallets remain impossible to deanonymize, as they are encrypted to all outside viewers. Private POI proofs are blinded, revealing no information about the underlying transaction. Proofs are generated on your device and, as they are zero-knowledge, remain completely private.
+3. The Private POI system and Rail Web Wallet app do not share any transaction history with anyone, including app publishers or contributors. Transactions from 0zk wallets remain impossible to deanonymize, as they are encrypted to all outside viewers. Private POI proofs are blinded, revealing no information about the underlying transaction. Proofs are generated on your device and, as they are zero-knowledge, remain completely private.
 
-Private POI is a groundbreaking system, and Railway Wallet is the first app to ever successfully use it. Help us with our mission of being the best high-tech, non-profit, ad-free, and privacy-respecting wallet app.
+Private POI is a groundbreaking system, and Rail Web Wallet is the first app to ever successfully use it. Help us with our mission of being the best high-tech, non-profit, ad-free, and privacy-respecting wallet app.
       `;
 };
 
 export const getTransferPOIDisclaimerMessage = () => {
   return `
-Please keep Railway open and active after sending a 0zk-0zk transfer (up to 30 seconds on desktop/web and 1-2 minutes on mobile) until a Private Proof of Innocence is created. This will guarantee that the recipient will be able to use those tokens immediately.
+Please keep Rail Web open and active after sending a 0zk-0zk transfer (up to 30 seconds on desktop/web and 1-2 minutes on mobile) until a Private Proof of Innocence is created. This will guarantee that the recipient will be able to use those tokens immediately.
 
 Why?
 
@@ -52,19 +52,19 @@ Private Proofs of Innocence are created after a transaction is confirmed. For th
 
 Is there any risk to the receiver?
 
-If you use Railway Wallet, there is a guarantee that private transactions can generate a Proof of Innocence. There is no risk that tokens will be unspendable if you give enough time after a transaction to allow a proof to generate.
+If you use Rail Web Wallet, there is a guarantee that private transactions can generate a Proof of Innocence. There is no risk that tokens will be unspendable if you give enough time after a transaction to allow a proof to generate.
       `;
 };
 
 export const getPOIBalancesDisclaimerMessage = () => {
   return `
-There are 4 balance types within Railway Wallet depending on Private POI status. Please note the following.
+There are 4 balance types within Rail Web Wallet depending on Private POI status. Please note the following.
 
 Spendable: Tokens marked as Spendable have a valid Private POI and can be spent by your 0zk address with no limitations.
 
 Pending: Tokens currently in the Unshield-Only Standby Period. After this period, you will be able to generate a Private POI. You still retain full control over these tokens during the Unshield-Only Standby Period and can unshield them back to the original depositing address.
 
-Incomplete: “Incomplete” tokens have passed the Unshield-Only spending period and are currently waiting on a Private POI. Please wait a few moments for your wallet to generate a Private POI check OR, if you received tokens from another wallet, please ask the sender to open their Railway Wallet app to complete the Private POI process.
+Incomplete: “Incomplete” tokens have passed the Unshield-Only spending period and are currently waiting on a Private POI. Please wait a few moments for your wallet to generate a Private POI check OR, if you received tokens from another wallet, please ask the sender to open their Rail Web Wallet app to complete the Private POI process.
 
 Restricted: Tokens that are from known undesirable activity as indicated by a list provider. These tokens will not become Spendable and Unshielding to the original address is the only option.
       `;
@@ -207,7 +207,7 @@ export const getTransactionPOIStatusInfoText = (
         return 'This transaction occurred before Private Proof of Innocence launched on this network. Please wait. Your wallet will make these funds spendable within a few minutes.';
       }
 
-      return 'Please request Private Proof of Innocence from sender. Your sender may simply open Railway Wallet to kick off Private POI generation.';
+      return 'Please request Private Proof of Innocence from sender. Your sender may simply open Rail Web Wallet to kick off Private POI generation.';
     }
     case RailgunWalletBalanceBucket.MissingInternalPOI:
       return 'This transaction includes a change output. Please wait. Your wallet will make these funds spendable within a few minutes.';

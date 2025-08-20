@@ -101,7 +101,7 @@ export const POIListsModal = ({ onClose }: Props) => {
         {showApplyChanges && (
           <>
             <Text className={styles.warningText}>
-              To apply the changes you need to restart Railway
+              To apply the changes you need to restart Rail Web
             </Text>
             <div
               className={cn(styles.itemCard, styles.itemContainerUpperSpacing)}
@@ -110,7 +110,7 @@ export const POIListsModal = ({ onClose }: Props) => {
               }}
             >
               <div className={styles.phraseHeader}>
-                <Text>Restart Railway</Text>
+                <Text>Restart Rail Web</Text>
                 {renderIcon(IconType.Refresh, 20)}
               </div>
             </div>

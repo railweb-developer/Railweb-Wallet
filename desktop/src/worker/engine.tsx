@@ -40,7 +40,7 @@ bridgeRegisterCall<StartRailgunEngineParams, void>(
     const db = new LevelDB(dbPath);
     const shouldDebug = devMode;
 
-    debug.enable(shouldDebug ? 'railway:*' : '');
+    debug.enable(shouldDebug ? 'railweb:*' : '');
 
     const artifactStore = new LocalForageArtifactStore();
 

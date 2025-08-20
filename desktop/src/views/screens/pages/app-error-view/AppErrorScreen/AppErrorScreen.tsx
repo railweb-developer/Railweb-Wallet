@@ -79,7 +79,7 @@ export const AppErrorScreen: React.FC<AppErrorScreenProps> = ({
     <>
       <div className={styles.textWrapper}>
         {!isDefined(error) && (
-          <Text className={styles.loadingText}>Launching Railway...</Text>
+          <Text className={styles.loadingText}>Launching Rail Web...</Text>
         )}
         {isDefined(error) && (
           <>
@@ -135,7 +135,7 @@ export const AppErrorScreen: React.FC<AppErrorScreenProps> = ({
       </div>
       {isDefined(error) && (
         <Text className={styles.footerText}>
-          Railway • Version {appVersionNumber}
+          Rail Web • Version {appVersionNumber}
         </Text>
       )}
       {showRecoveryMode && (

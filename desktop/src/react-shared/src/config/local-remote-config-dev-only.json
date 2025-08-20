@@ -1,1 +1,227 @@
-{}
+{
+  "minVersionNumberIOS": "5.22.4",
+  "minVersionNumberAndroid": "5.22.4",
+  "minVersionNumberWeb": "5.22.4",
+  "bootstrapPeers-": [],
+  "wakuPubSubTopic": "/waku/2/rs/0/1",
+  "additionalDirectPeers": [],
+  "wakuPeerDiscoveryTimeout": 60000,
+  "pollingInterval": 30000,
+  "proxyApiUrl": "https://api.fdi.network",
+  "proxyNftsApiUrl": "https://nfts.fdi.network",
+  "proxyPoiAggregatorUrl": "https://ppoi.fdi.network",
+  "publicPoiAggregatorUrls": [],
+  "poiDocumentation": {
+    "railgunPOIDocUrl": "https://docs.railgun.org/wiki/assurance/private-proofs-of-innocence",
+    "railwayPOIDocUrl": "https://help.railway.xyz/private-proofs-of-innocence"
+  },
+  "defaultNetworkName": "Ethereum",
+  "callout": {
+    "message": "",
+    "type": ""
+  },
+  "availableNetworks": {
+    "Ethereum": {
+      "canSendPublic": true,
+      "canSendShielded": true,
+      "canShield": true,
+      "canUnshield": true,
+      "canSwapPublic": true,
+      "canSwapShielded": true,
+      "canRelayAdapt": true
+    },
+    "BNB_Chain": {
+      "canSendPublic": true,
+      "canSendShielded": true,
+      "canShield": true,
+      "canUnshield": true,
+      "canSwapPublic": true,
+      "canSwapShielded": true,
+      "canRelayAdapt": true
+    },
+    "Polygon": {
+      "canSendPublic": true,
+      "canSendShielded": true,
+      "canShield": true,
+      "canUnshield": true,
+      "canSwapPublic": true,
+      "canSwapShielded": true,
+      "canRelayAdapt": true
+    },
+    "Arbitrum": {
+      "canSendPublic": true,
+      "canSendShielded": true,
+      "canShield": true,
+      "canUnshield": true,
+      "canSwapPublic": true,
+      "canSwapShielded": true,
+      "canRelayAdapt": true
+    },
+    "Ethereum_Sepolia": {
+      "canSendPublic": true,
+      "canSendShielded": true,
+      "canShield": true,
+      "canUnshield": true,
+      "canSwapPublic": true,
+      "canSwapShielded": true,
+      "canRelayAdapt": true
+    },
+    "Hardhat": {
+      "canSendPublic": true,
+      "canSendShielded": true,
+      "canShield": true,
+      "canUnshield": true,
+      "canSwapPublic": true,
+      "canSwapShielded": true,
+      "canRelayAdapt": true,
+      "isDevOnly": true
+    }
+  },
+  "networkProvidersConfig": {
+    "Ethereum": {
+      "chainId": 1,
+      "providers": [
+        {
+          "provider": "https://api.fdi.network/rpc/alchemy/eth-mainnet",
+          "priority": 1,
+          "weight": 4,
+          "maxLogsPerBatch": 2,
+          "stallTimeout": 2500
+        },
+        {
+          "provider": "https://ethereum-rpc.publicnode.com",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        },
+        {
+          "provider": "https://eth.llamarpc.com",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        }
+      ]
+    },
+    "BNB_Chain": {
+      "chainId": 56,
+      "providers": [
+        {
+          "provider": "https://bsc-rpc.publicnode.com",
+          "priority": 2,
+          "weight": 3,
+          "maxLogsPerBatch": 10,
+          "stallTimeout": 2500
+        },
+        {
+          "provider": "https://bsc-dataseed.binance.org",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10,
+          "stallTimeout": 2500
+        },
+        {
+          "provider": "https://bsc-dataseed1.defibit.io",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        },
+        {
+          "provider": "https://bsc-dataseed1.ninicoin.io",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        }
+      ]
+    },
+    "Ethereum_Sepolia": {
+      "chainId": 11155111,
+      "providers": [
+        {
+          "provider": "https://api.fdi.network/rpc/alchemy/eth-sepolia",
+          "priority": 1,
+          "weight": 4,
+          "maxLogsPerBatch": 2,
+          "stallTimeout": 2500
+        },
+        {
+          "provider": "https://ethereum-sepolia-rpc.publicnode.com",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        },
+        {
+          "provider": "https://ethereum-sepolia.blockpi.network/v1/rpc/public",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        }
+      ]
+    },
+    "Polygon": {
+      "chainId": 137,
+      "providers": [
+        {
+          "provider": "https://api.fdi.network/rpc/alchemy/polygon-mainnet",
+          "priority": 1,
+          "weight": 4,
+          "maxLogsPerBatch": 2,
+          "stallTimeout": 2500
+        },
+        {
+          "provider": "https://polygon-bor-rpc.publicnode.com",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        },
+        {
+          "provider": "https://endpoints.omniatech.io/v1/matic/mainnet/public",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        }
+      ]
+    },
+    "Hardhat": {
+      "chainId": 31337,
+      "providers": [
+        {
+          "provider": "http://127.0.0.1:8545",
+          "priority": 1,
+          "weight": 2,
+          "stallTimeout": 2500
+        }
+      ]
+    },
+    "Arbitrum": {
+      "chainId": 42161,
+      "providers": [
+        {
+          "provider": "https://api.fdi.network/rpc/alchemy/arb-mainnet",
+          "priority": 1,
+          "weight": 4,
+          "maxLogsPerBatch": 2
+        },
+        {
+          "provider": "https://arb1.arbitrum.io/rpc",
+          "priority": 2,
+          "weight": 2,
+          "stallTimeout": 2500,
+          "maxLogsPerBatch": 10
+        },
+        {
+          "provider": "https://arbitrum-one-rpc.publicnode.com",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        },
+        {
+          "provider": "https://arbitrum.meowrpc.com",
+          "priority": 2,
+          "weight": 2,
+          "maxLogsPerBatch": 10
+        }
+      ]
+    }
+  },
+  "networkProvidersConfigArchiveNodes": {}
+}

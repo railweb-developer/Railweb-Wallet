@@ -134,7 +134,7 @@ export const AppPasswordView: React.FC<Props> = ({ success }) => {
         className={cn('overlay-container', styles.appPasswordScreenContainer)}
       >
         <img src={ImageSwirl()} className={styles.swirl} alt="railway-swirl" />
-        <Text className={styles.titleText}>RAILWAY</Text>
+        <Text className={styles.titleText}>RAIL WEB</Text>
         <Text className={styles.headerText}>Enter password to continue</Text>
         <form onSubmit={submit} className={styles.inputForm}>
           <Input

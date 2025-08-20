@@ -255,7 +255,7 @@ export const SidebarMenu = (): JSX.Element => {
             })}
           >
             {!isSmallMenu && (
-              <Text className={styles.railwayLogoText}>RAILWAY</Text>
+              <Text className={styles.railwayLogoText}>RAIL WEB</Text>
             )}
             <div className={styles.selectorsWrapper}>
               <Selector

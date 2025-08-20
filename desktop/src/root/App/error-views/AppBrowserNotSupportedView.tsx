@@ -11,14 +11,14 @@ export const AppBrowserNotSupportedView: React.FC<Props> = () => {
         <div className={styles.mobileContent}>
           <img
             className={styles.mobileLogo}
-            src="/railway-circle.png"
-            alt="railway-logo-railgun-app"
+            src="/CHANGE_TODO-circle.png"
+            alt="CHANGE_TODO-logo-railgun-app"
             width={108}
             height={108}
           />
-          <Text className={styles.mobileTitle}>RAILWAY</Text>
+          <Text className={styles.mobileTitle}>RAIL WEB</Text>
           <Text className={styles.mobileDescription}>
-            The Railway web app is not available on this browser. Please use
+            The Rail Web app is not available on this browser. Please use
             either Chrome or Brave.
           </Text>
         </div>

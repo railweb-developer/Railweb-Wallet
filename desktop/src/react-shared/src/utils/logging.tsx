@@ -4,13 +4,13 @@ import { ReactConfig } from '../config/react-config';
 import { SharedConstants } from '../config/shared-constants';
 
 enum Logger {
-  AppLogs = 'railway:log',
-  AppError = 'railway:error',
-  ReduxLogs = 'railway:redux',
-  BridgeLogs = 'railway:backend',
-  BridgeError = 'railway:backend:error',
-  WakuLogs = 'railway:waku',
-  WakuError = 'railway:waku:error',
+  AppLogs = 'railweb:log',
+  AppError = 'railweb:error',
+  ReduxLogs = 'railweb:redux',
+  BridgeLogs = 'railweb:backend',
+  BridgeError = 'railweb:backend:error',
+  WakuLogs = 'railweb:waku',
+  WakuError = 'railweb:waku:error',
 }
 
 const loggerOptions: Record<Logger, { color: string }> = {

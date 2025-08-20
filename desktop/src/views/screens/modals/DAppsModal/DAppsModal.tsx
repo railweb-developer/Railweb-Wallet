@@ -19,7 +19,7 @@ export const DAppsModal: React.FC<Props> = ({ onClose }) => {
 
   const dApps: DApp[] = [
     {
-      name: 'Railway DEX',
+      name: 'Rail Web DEX',
       href: TabRoute.Swap,
       description: 'Private and public swaps',
       icon: DEXLogo,

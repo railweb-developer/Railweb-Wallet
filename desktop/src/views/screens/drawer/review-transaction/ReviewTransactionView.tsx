@@ -832,7 +832,7 @@ export const ReviewTransactionView: React.FC<Props> = ({
         if (!isFullyPrivateTransaction) {
           return null;
         }
-        const text = `Keep Railway open and active after sending a 0zk-0zk transfer (up to 30 seconds) until a Private Proof of Innocence is created.`;
+        const text = `Keep Rail Web open and active after sending a 0zk-0zk transfer (up to 30 seconds) until a Private Proof of Innocence is created.`;
 
         return (
           <InfoCallout

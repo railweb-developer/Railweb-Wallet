@@ -258,7 +258,7 @@ export const WalletProviderLoadingView: React.FC<Props> = ({
       loadComplete();
     } catch (cause) {
       setError(
-        new Error(`Could not load Railway wallets and networks.`, { cause }),
+        new Error(`Could not load Rail Web wallets and networks.`, { cause }),
       );
     }
   };
@@ -374,7 +374,7 @@ export const WalletProviderLoadingView: React.FC<Props> = ({
           {!isDefined(error) && (
             <>
               <Text className={styles.loadingText}>
-                Loading Railway wallets, connecting to networks and scanning
+                Loading Rail Web wallets, connecting to networks and scanning
                 transactions...
               </Text>
               <div className={styles.progressBarContainer}>

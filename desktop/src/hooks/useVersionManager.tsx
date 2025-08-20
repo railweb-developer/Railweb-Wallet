@@ -19,7 +19,6 @@ import {
 export const useVersionManager = (
   triggerAppStatus: (appStatus: AppStatus, err?: Error) => void,
 ) => {
-  const isDesktop = isElectron();
   const dispatch = useAppDispatch();
   const [lastCheck, setLastCheck] = useState<Date>();
   const [alert, setAlert] = useState<AlertProps | undefined>(undefined);
@@ -29,25 +28,12 @@ export const useVersionManager = (
 
   const showNewVersionAvailableAlert = () => {
     setAlert({
-      title: 'New Railway version available',
-      submitTitle: isDesktop ? 'Download' : 'Refresh',
-      message: `There's a new version available. ${
-        isDesktop
-          ? 'You may update from the downloads page.'
-          : 'Please refresh to update.'
-      }`,
+      title: 'New Rail Web version available',
+      submitTitle: 'Refresh',
+      message: `There's a new version available. ${'Please refresh to update.'}`,
       onClose: () => setAlert(undefined),
       onSubmit: () => {
-        if (isDesktop) {
-          createExternalSiteAlert(
-            Constants.ELECTRON_DOWNLOAD_URL,
-            setExternalSiteAlert,
-            dispatch,
-            ExternalSiteAlertMessages.OPEN_EXTERNAL_TRANSACTION,
-          );
-        } else {
-          window.location.reload();
-        }
+        window.location.reload();
         setAlert(undefined);
       },
     });
@@ -77,7 +63,7 @@ export const useVersionManager = (
           triggerAppStatus(
             AppStatus.VersionOutdated,
             new Error(
-              `You are using an outdated version of Railway. Please update your app to version ${minVersionNumberWeb} to continue.`,
+              `You are using an outdated version of Rail Web. Please update your app to version ${minVersionNumberWeb} to continue.`,
             ),
           );
         }
@@ -102,14 +88,6 @@ export const useVersionManager = (
   }, []);
 
   useEffect(() => {
-    if (isDesktop) {
-      const renderer = window as unknown as ElectronRendererWindow;
-      renderer.electronBridge.addFocusListener(handleDailyCheck);
-
-      return () => {
-        renderer.electronBridge.removeFocusListener(handleDailyCheck);
-      };
-    } else {
       const handleVisibilityChangeEvent = async () => {
         if (document.visibilityState === 'visible') {
           // eslint-disable-next-line @typescript-eslint/no-floating-promises
@@ -128,7 +106,7 @@ export const useVersionManager = (
           handleVisibilityChangeEvent,
         );
       };
-    }
+    
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

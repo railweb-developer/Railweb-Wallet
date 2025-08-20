@@ -57,7 +57,7 @@ export const SwapBuyTokenAmount: React.FC<Props> = ({
     isRailgun,
     'swap',
     '0x Exchange',
-    'Railway DEX swaps are atomic and non-custodial.',
+    'Rail Web DEX swaps are atomic and non-custodial.',
   );
 
   const onDismissSelectERC20Modal = (token?: ERC20Token) => {

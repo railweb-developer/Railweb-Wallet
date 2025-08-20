@@ -19,7 +19,7 @@ interface ExportWalletProps {
   onClose: () => void;
 }
 
-const exportWalletMessage = `Export your wallet, including its seed phrase and other settings, into an encrypted .railway file.\n\nPlease use a strong, memorable File Encryption Code. This can be the same as your wallet password, or a different string. This code is required to import your wallet into a new device.`;
+const exportWalletMessage = `Export your wallet, including its seed phrase and other settings, into an encrypted .railweb file.\n\nPlease use a strong, memorable File Encryption Code. This can be the same as your wallet password, or a different string. This code is required to import your wallet into a new device.`;
 
 export const ExportWalletAlert = ({ onClose, wallet }: ExportWalletProps) => {
   const [authKey, setAuthKey] = useState<Optional<string>>();
@@ -49,7 +49,7 @@ export const ExportWalletAlert = ({ onClose, wallet }: ExportWalletProps) => {
     const file = new Blob([JSON.stringify(exportJSON)], {
       type: 'application/json',
     });
-    downloadFile(file, wallet.name, DownloadableFileExtension.RAILWAY);
+    downloadFile(file, wallet.name, DownloadableFileExtension.RAILWEB);
   };
 
   return (

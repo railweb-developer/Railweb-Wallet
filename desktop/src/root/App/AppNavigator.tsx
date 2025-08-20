@@ -32,7 +32,7 @@ export const AppNavigator = () => {
     (Constants.DEV_MODE || Constants.STAG_MODE) &&
     !Constants.OVERRIDE_PROD_TEST_FOR_DEV;
 
-  debug.enable(ReactConfig.IS_DEV ? 'railway:*' : '');
+  debug.enable(ReactConfig.IS_DEV ? 'railweb:*' : '');
 
   LocalForageWrapper.init();
   StorageService.init(LocalForageWrapper);
@@ -86,7 +86,7 @@ export const AppNavigator = () => {
         triggerAppStatus(
           AppStatus.VersionOutdated,
           new Error(
-            `You are using an outdated version of Railway. Please update your app to version ${minVersionNumberWeb} to continue.`,
+            `You are using an outdated version of Rail Web. Please update your app to version ${minVersionNumberWeb} to continue.`,
           ),
         );
         return;

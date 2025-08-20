@@ -176,7 +176,7 @@ export const EnterPasswordModal: React.FC<Props> = ({
       <div className={styles.footerContainer}>
         <Text className={styles.footer}>
           {
-            'Railway Wallet app does not connect to any centralized servers and stores all data encrypted locally (on your user device only).'
+            'Rail Web Wallet app does not connect to any centralized servers and stores all data encrypted locally (on your user device only).'
           }
         </Text>
       </div>

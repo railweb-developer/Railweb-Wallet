@@ -52,7 +52,7 @@ export const ErrorDetailsModal: React.FC<ErrorDetailsModalProps> = ({
       showClose={true}
     >
       <Text className={cn('selectable-text')} style={{ marginBottom: 20 }}>
-        (Railway {isElectron() ? 'Desktop' : 'Web'} {appVersion}, Chrome{' '}
+        (Rail Web {appVersion}, Chrome{' '}
         {chromeVersion}, {platform} {architecture})
       </Text>
       {messages.map((message, index) => (

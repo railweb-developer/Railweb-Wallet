@@ -73,7 +73,7 @@ export class WalletSecureStorageWeb extends WalletSecureService {
     );
     if (!mnemonic) {
       throw new Error(
-        'Could not find encrypted data for your wallet. Please clear your browser storage to reset the Railway web app.',
+        'Could not find encrypted data for your wallet. Please clear your browser storage to reset the Rail web app.',
       );
     }
     return mnemonic;
