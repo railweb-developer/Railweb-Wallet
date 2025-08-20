@@ -1,11 +1,6 @@
-# Railway Wallet
+# Rail Web Wallet
 
-Private DeFi Wallet for Mac, Windows, Linux, web, iOS, and Android.
+Private DeFi Wallet for Web only.
 
-Need help? See https://t.me/railwaywallet
+Need help? See https://t.me/railwebwallet
 
----
-
-Use of Railway or Railway Wallet name may not be used without permission of railway.xyz.
-
-Copyright (C) Right to Privacy Foundation
